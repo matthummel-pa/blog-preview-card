@@ -1,0 +1,18 @@
+{
+  "name": "project-files",
+  "version": "1.0.0",
+  "description": "Blog preview card project",
+  "main": "index.js",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap": "^5.3.3",
+    "vite": "^6.2.1"
+  }
+}

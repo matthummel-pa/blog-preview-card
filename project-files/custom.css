@@ -1,0 +1,166 @@
+
+/* Import Figtree font from Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Figtree:wght@500;800&display=swap');
+
+/* CSS Variables */
+:root {
+  --color-yellow: hsl(47, 88%, 63%);
+  --color-white: hsl(0, 0%, 100%);
+  --color-gray-500: hsl(0, 0%, 42%);
+  --color-gray-950: hsl(0, 0%, 7%);
+
+  --border-radius: 0.75rem;
+  --transition: all 0.3s ease;
+}
+
+body {
+  font-family: 'Figtree', sans-serif;
+  font-weight: 500;
+  background-color: var(--color-yellow);
+  color: var(--color-gray-950);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+}
+
+/* Override Bootstrap card with our custom styling */
+.blog-card {
+  background-color: var(--color-white);
+  border-radius: var(--border-radius);
+  overflow: hidden;
+  border: 1px solid var(--color-gray-950);
+  box-shadow: 0.5rem 0.5rem 0 var(--color-gray-950);
+  transition: var(--transition);
+  max-width: 23.4375rem;
+}
+
+.blog-card:hover {
+  box-shadow: 0.75rem 0.75rem 0 var(--color-gray-950);
+  transform: translate(-0.25rem, -0.25rem);
+}
+
+/* Card body */
+.card-body {
+  padding: 1.5rem;
+}
+
+/* Card image */
+.card-image {
+  width: 100%;
+  object-fit: cover;
+  border-radius: var(--border-radius) var(--border-radius) 0 0;
+}
+
+/* Category tag */
+.tag {
+  display: inline-block;
+  background-color: var(--color-yellow);
+  padding: 0.5rem 1rem;
+  border-radius: 0.25rem;
+  font-weight: 800;
+  margin-bottom: 1rem;
+}
+
+/* Override Bootstrap's default h tags */
+.card-title {
+  font-weight: 800;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  transition: var(--transition);
+}
+
+.card-title:hover {
+  color: var(--color-yellow);
+  cursor: pointer;
+}
+
+/* Text colors */
+.text-gray {
+  color: var(--color-gray-500);
+}
+
+/* Description */
+.card-description {
+  font-size: 1rem;
+  color: var(--color-gray-500);
+  line-height: 1.5;
+  margin-bottom: 1.5rem;
+}
+
+/* Author section */
+.author {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+
+.author-avatar {
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+}
+
+.author-name {
+  font-weight: 800;
+}
+
+/* Attribution */
+.attribution {
+  font-size: 0.6875rem;
+  text-align: center;
+  margin-top: 2rem;
+  width: 100%;
+  margin-top: auto;
+  padding-top: 1rem;
+}
+
+.attribution a {
+  color: var(--color-gray-950);
+  text-decoration: underline;
+}
+
+/* Media Queries */
+@media (min-width: 90rem) {
+  .blog-card {
+    max-width: 25rem;
+  }
+  
+  .card-content {
+    padding: 2rem;
+  }
+  
+  .card-body {
+    padding: 2rem;
+  }
+  
+  .card-title {
+    font-size: 1.75rem;
+  }
+}
+
+/* Bootstrap Overrides */
+.btn-primary {
+  background-color: var(--color-yellow);
+  border-color: var(--color-gray-950);
+  color: var(--color-gray-950);
+}
+
+.btn-primary:hover {
+  background-color: var(--color-gray-950);
+  border-color: var(--color-gray-950);
+  color: var(--color-white);
+}
+
+/* Main content container */
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex-grow: 1;
+}
+

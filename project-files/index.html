@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Blog preview card</title>
+</head>
+<body>
+  <a href="#main-content" class="skip-to-content visually-hidden">Skip to main content</a>
+  <main id="main-content" class="container py-5">
+    <article class="blog-card mx-auto" aria-labelledby="article-title">
+      <h2 class="visually-hidden">Blog Preview Card</h2>
+      <img src="./assets/images/illustration-article.svg" alt="Article illustration" class="card-image p-3">
+      <div class="card-body">
+        <span class="tag">Learning</span>
+        <p class="text-gray small">Published 21 Dec 2023</p>
+        
+        <h2 id="article-title" class="card-title"><a href="#" class="article-link">HTML & CSS foundations</a></h2>
+        
+        <p class="card-description">
+          These languages are the backbone of every website, defining structure, content, and presentation.
+        </p>
+        
+        <div class="author">
+          <img src="./assets/images/image-avatar.webp" alt="Greg Hooper" class="author-avatar">
+          <span class="author-name">Greg Hooper</span>
+        </div>
+      </div>
+    </article>
+  </main>
+  
+  <footer class="text-center py-3" role="contentinfo">
+    <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank" rel="noopener">Frontend Mentor</a>. 
+    Coded by <a href="matthummel.com" aria-label="Developer's portfolio">Matt Hummel</a>.
+    </div>
+  </footer>
+  
+  <script type="module" src="./main.js"></script>
+</body>
+</html>
